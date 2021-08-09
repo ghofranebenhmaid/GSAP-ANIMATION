@@ -1,0 +1,97 @@
+.banner {
+   position: relative;
+
+   .banner-addition-bg {
+      background: $blue;
+      position: absolute;
+      inset: 0;
+      height: 100%;
+   }
+   .banner-bg {
+      background: $lPink;
+      position: absolute;
+      inset: 0;
+      height: 100%;
+   }
+
+   .container {
+      .row {
+         .banner-inner {
+            flex-wrap: wrap;
+            position: relative;
+            padding: 6rem clamp(2rem, 12vw, 10rem);
+            h1 {
+               font-size: clamp(1.5rem, 2.5vw, 4rem);
+            }
+            p {
+               width: 100%;
+               max-width: 25rem;
+            }
+            .content {
+
+               flex: 1;
+               .content-inner {
+                  margin-top: 6rem;
+                  margin-bottom: 2rem;
+                  .btn-row {
+                     padding: 3rem 0;
+                     > a {
+                        color: $white;
+                        background-color: $redOrange;
+                        padding: 1rem 1.5rem;
+                        border-radius: 3rem;
+                     }
+                  }
+                  .play-video {
+                     position: absolute;
+                     bottom: 0;
+                     display: inline-block;
+                     display: none;
+                     > span {
+                        background-color: $white;
+                        padding: 1rem 1.5rem;
+                        border-radius: 3px;
+                        img {
+                           width: 0.7rem;
+                           margin-right: 0.5rem;
+                        }
+                     }
+                  }
+               }
+            }
+            .image {
+               flex: 1;
+               .image-inner {
+                  position: relative;
+                  z-index: 2;
+                >  img {
+                     padding: 0 0rem;
+                     width: 30vw;
+                     border-radius: 1rem;
+                  }
+                  .feature-banner {
+                     position: absolute;
+                     color: $white;
+                     padding: 0.7rem 1.5rem;
+                     border-radius: 3px;
+                     z-index: -1;
+                     //display: none;
+                     img {
+                        width: 20rem;
+                     }
+                  }
+                  .blue {
+                     right: 20%;
+                     top: 0%;
+                  }
+                  .green {
+                     left: 0%;
+                     bottom: 10%;
+                     transform: rotate(-10deg);
+                  }
+               }
+            }
+         }
+      }
+   }
+}

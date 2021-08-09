@@ -1,0 +1,47 @@
+.features {
+   .container {
+      .row {
+         .features-inner {
+            padding: 7rem clamp(2rem, 12vw, 10rem);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10rem;
+            .features-content {
+               flex: 1;
+               h3 {
+                  font-size: clamp(1.5rem, 2.5vw, 4rem);
+               }
+               
+               .btn-row {
+                  font-size: 0.7rem;
+                  img {
+                     width: 0.3rem;
+                     margin-left: 0.5rem;
+                  }
+               }
+            }
+            .features-list {
+               flex: 1;
+               ul {
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                  gap: 1rem;
+                  li {
+                     h3 {
+                        font-size: 1.5rem;
+                        margin-bottom: 1rem;
+                        color: $redOrange;
+                     }
+                     img {
+                        width: 1.5rem;
+                        height: auto;
+                        margin-bottom: 1rem;
+                        // display: none;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

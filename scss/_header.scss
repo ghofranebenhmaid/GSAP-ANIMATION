@@ -1,0 +1,50 @@
+.header {
+   position: absolute;
+   width: 100%;
+   height: 100px;
+   z-index: 2;
+
+   .container-fluid {
+      .row {
+         .header-inner {
+            padding: 1.5rem clamp(2rem, 12vw, 7rem);
+            font-size: 0.7rem;
+            .logo {
+               a {
+                  font-family: 'Playfair Display';
+                  color: $blue;
+                  font-size: 1rem;
+                  cursor: pointer;
+               }
+            }
+            .navigation {
+               ul {
+                  li {
+                     padding: 0 1.5rem;
+                  }
+               }
+            }
+            .nav-logins {
+               .login {
+                  padding: 0 1.5rem;
+               }
+               .apply {
+                  padding: 0.7rem 1.5rem;
+                  border: 2px solid $blue;
+                  border-radius: 2rem;
+               }
+            }
+            .hamburger {
+               cursor: pointer;
+               span {
+                  background-color: $blue;
+                  width: 1.2rem;
+                  height: 0.15rem;
+                  display: block;
+                  margin: 0.2rem 0;
+               }
+            }
+         }
+      }
+   }
+}
